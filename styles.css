@@ -1,0 +1,52 @@
+html{
+    background-color: blueviolet;
+}
+
+#animation{
+    padding: 0px;
+    font-size: 1rem;
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    transition: font-size 2s , width 2s ;
+    border-color: blanchedalmond;
+    border-width: 5px;
+    border-style:dotted;
+    width: 25vw;
+    border-radius: 4em;
+}
+
+#animation:hover{
+    transition: font-size 2s , width 2s ;
+    font-size: 2rem;
+    width: 50vw;
+}
+
+p{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes animate{
+    0%{
+        color: black;
+    }
+    50%{
+        color: red;
+    }
+    100%{
+        color: blue;
+    }
+}
+
+#keyframe{
+    color:black;
+    animation-name: animate;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: forwards; */
+}
